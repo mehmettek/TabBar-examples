@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orn_1/denklemhesapla.dart';
 import 'package:orn_1/dropdownandimage.dart';
 import 'package:orn_1/myhomepage.dart';
 import 'package:orn_1/textediting.dart';
@@ -52,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage>  with SingleTickerProviderState
           Page1(),
           TextEditing(),
           DropDownAndImage(),
-          Page1(),
+          Denklem(),
           Page1(),
           Page1(),
         ],
