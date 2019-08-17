@@ -43,7 +43,7 @@ class _DenklemState extends State<Denklem> {
                   s2=0;
                   else
                  s2 = double.parse(b.text);
-                
+          
               });
             },
             controller: b,
