@@ -16,7 +16,9 @@ class _DialogWidgetState extends State<DialogWidget> {
       key: _sckey,
       backgroundColor: bgcolor,
        floatingActionButton: new FloatingActionButton(
-        onPressed: (){},
+        onPressed:() =>
+          changeColor(Colors.green),
+        
       child: new Icon(Icons.refresh),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

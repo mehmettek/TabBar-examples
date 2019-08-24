@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       routes: {
-        "/":(context) => MyHomePage(),
+        "/":(context) => MyHomePage(title:"Example"),
         },
       
     );
