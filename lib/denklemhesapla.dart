@@ -7,7 +7,7 @@ class Denklem extends StatefulWidget {
 }
 
 class _DenklemState extends State<Denklem> {
-  double _sonuc = 0, s1 = 0, s2 = 0, s3 = 0, kok1 = 0, kok2 = 0, x = 0;
+  double  s1 = 0, s2 = 0, s3 = 0, kok1 = 0, kok2 = 0, x = 0;
   String text = "";
   TextEditingController a = new TextEditingController();
   TextEditingController b = new TextEditingController();
@@ -20,7 +20,8 @@ class _DenklemState extends State<Denklem> {
       child: Column(
         children: <Widget>[
           TextField(
-            decoration: InputDecoration(hintText: 'A Değerini Giriniz'),
+                  keyboardType: TextInputType.number,
+            decoration: InputDecoration(hintText: 'A Değerini Giriniz',labelText: "A Sayısı"),
             onSubmitted: (String metin) {
               setState(() {
                    if(a.text.isEmpty)
@@ -36,7 +37,8 @@ class _DenklemState extends State<Denklem> {
             height: 30.0,
           ),
           TextField(
-            decoration: InputDecoration(hintText: 'B Değerini Giriniz'),
+                  keyboardType: TextInputType.number,
+            decoration: InputDecoration(hintText: 'B Değerini Giriniz',labelText: "B Sayısı"),
             onSubmitted: (String metin) {
               setState(() {
                    if(b.text.isEmpty)
@@ -52,7 +54,8 @@ class _DenklemState extends State<Denklem> {
             height: 30.0,
           ),
           TextField(
-            decoration: InputDecoration(hintText: 'C Değerini Giriniz'),
+                  keyboardType: TextInputType.number,
+            decoration: InputDecoration(hintText: 'C Değerini Giriniz',labelText: "C Sayısı"),
             onSubmitted: (String metin) {
               setState(() {
                 if(c.text.isEmpty)

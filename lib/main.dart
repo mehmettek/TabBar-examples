@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orn_1/alertdialogandsnackbar.dart';
 import 'package:orn_1/denklemhesapla.dart';
 import 'package:orn_1/dropdownandimage.dart';
 import 'package:orn_1/myhomepage.dart';
@@ -15,7 +16,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.white,
       ),
-      home: MyHomePage(title: 'Deneme'),
+      routes: {
+        "/":(context) => MyHomePage(),
+        },
+      
     );
   }
 }
@@ -54,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage>  with SingleTickerProviderState
           TextEditing(),
           DropDownAndImage(),
           Denklem(),
-          Page1(),
+          DialogWidget(),
           Page1(),
         ],
         controller: controller,
