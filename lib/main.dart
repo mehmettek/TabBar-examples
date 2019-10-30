@@ -3,6 +3,7 @@ import 'package:orn_1/alertdialogandsnackbar.dart';
 import 'package:orn_1/denklemhesapla.dart';
 import 'package:orn_1/dropdownandimage.dart';
 import 'package:orn_1/myhomepage.dart';
+import 'package:orn_1/numerical_methods.dart';
 import 'package:orn_1/textediting.dart';
 
 void main() => runApp(MyApp());
@@ -59,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage>  with SingleTickerProviderState
           DropDownAndImage(),
           Denklem(),
           DialogWidget(),
-          Page1(),
+          NumericalMethods(),
         ],
         controller: controller,
       ),
